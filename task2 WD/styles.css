@@ -1,0 +1,76 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.stopwatch-container {
+    background-color: #222;
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #00C851;
+}
+
+.timer {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #00C851;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #007E33;
+}
+
+/* Lap Times Display */
+#lap-times {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+
+.lap-time {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: #FF8800;
+}
+
+/* Add Scrollbar Styles */
+#lap-times::-webkit-scrollbar {
+    width: 10px;
+}
+
+#lap-times::-webkit-scrollbar-thumb {
+    background-color: #00C851;
+    border-radius: 5px;
+}

@@ -1,0 +1,84 @@
+/* Basic styles for the navigation bar */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+/* Change color on hover */
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Change background color on scroll */
+nav.scrolled {
+    background-color: #111;
+}
+
+/* Sections styling */
+section {
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: 60px; /* To prevent content from hiding behind fixed navbar */
+}
+
+#home {
+    background-color: #f4f4f4;
+}
+
+#about, #services, #contact {
+    background-color: #fff;
+}
+
+#services ul {
+    list-style: none;
+    padding: 0;
+}
+
+#services li {
+    padding: 10px 0;
+    color: #333;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
